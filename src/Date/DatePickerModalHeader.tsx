@@ -37,11 +37,13 @@ export default function DatePickerModalHeader(
               accessibilityLabel={getTranslation(locale, 'close')}
               onPress={props.onDismiss}
               color={color}
+              iconColor={color}
               testID="react-native-paper-dates-close"
             />
             <Appbar.Content title={''} />
             <Button
               color={color}
+              textColor={color}
               onPress={props.onSave}
               disabled={props.saveLabelDisabled || false}
               uppercase={props.uppercase || true}
